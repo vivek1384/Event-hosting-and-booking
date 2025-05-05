@@ -1,0 +1,50 @@
+.container {
+    height: calc(100dvh - 50px);
+    background: var(--bg);
+    overflow-y: scroll;
+}
+
+.categories {
+    margin: 2rem;
+    /* background: var(--header); */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category .heading {
+    display: flex;
+    justify-content: start;
+}
+
+.category .heading h1 {
+    display: flex;
+}
+
+.category .body {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+
+.category .body .box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category .body .box img{
+    width: 250px;
+    height: 250px;
+}

@@ -1,0 +1,82 @@
+.container{
+    height: calc(100dvh - 50px);
+    background: var(--bg);
+    overflow: hidden;
+    display: flex;
+}
+
+form{
+    height: fit-content;
+    width: 35%;
+    padding: 1rem;
+    border: 2px solid var(--main-text);
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    background: var(--header);
+    box-shadow: 0 0 15px 5px var(--header);
+}
+
+form .div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 7px;
+}
+
+form .div input, select, textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 4px;
+    padding-left: 12px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--main-text);
+}
+
+form select{
+    width: 104%;
+}
+
+form .div div{
+    display: flex;
+    flex-direction: row;
+    width: 104%;
+}
+form .div div input{
+    border-right: 2px solid var(--main-text);
+}
+
+button{
+    margin-top: 8px;
+    font-size: 18px;
+    width: 25%;
+    color: var(--bg);
+    background: var(--main-text);
+    border: 2px solid var(--main-text);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+button:hover{
+    color: var(--main-text);
+    background: var(--header);
+}
+
+@media screen and (width <= 750px) {
+    form {
+        width: 80%;
+        margin-top: 12rem;
+    }   
+    button{
+        width: 50%;
+    }
+}

@@ -1,0 +1,27 @@
+<app-header />
+
+<div class="container">
+    <form action="">
+        <h1>📅 Plan an Event</h1>
+        <div class="div">
+            <input type="text" placeholder="Event Name...">
+            <input type="date">
+            <div>
+                <input type="text" placeholder="Time">
+                <select name="" id="">
+                    <option value="" selected disabled hidden>AM/PM</option>
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </div>
+            <select>
+                <option value="" disabled hidden selected>Location...</option>
+                @for (item of cityList; track $index) {
+                    <option value="">{{item}}</option>
+                }
+            </select>
+            <textarea name="" id="" placeholder="Event Description..." rows="3"></textarea>
+            <button>Submit</button>
+        </div>
+    </form>
+</div>

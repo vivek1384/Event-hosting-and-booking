@@ -1,0 +1,14 @@
+<div class="container">
+    <form action="" [formGroup]="user">
+        <input type="text" formControlName="name" name="name">
+        <div *ngIf="(user.controls['name'].touched || user.controls['name'].dirty)">
+            @if(user.controls['name'].errors?.['required']){
+            <p>Name is required.</p>
+            }@else if (user.controls['name'].errors?.['pattern']){
+            <p>Name has pattern.</p>
+            }
+        </div>
+        <input type="text" formControlName="password" name="name">
+        <button (click)="submit()" [disabled]="user.invalid">Submit</button>
+    </form>
+</div>
