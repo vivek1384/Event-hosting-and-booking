@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { EventPlanComponent } from './event-plan/event-plan.component';
 import { ExploreComponent } from './explore/explore.component';
 import { NewComponent } from './new/new.component';
+import { EventComponent } from './event/event.component';
 
 export const routes: Routes = [
   {
@@ -25,5 +26,9 @@ export const routes: Routes = [
   {
     path: 'new',
     component: NewComponent,
+  },
+  {
+    path: 'event',
+    component: EventComponent,
   },
 ];

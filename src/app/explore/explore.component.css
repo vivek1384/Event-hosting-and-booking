@@ -52,4 +52,5 @@ h2, h3{
 .category .body .box img{
     width: 250px;
     height: 250px;
+    cursor: pointer;
 }

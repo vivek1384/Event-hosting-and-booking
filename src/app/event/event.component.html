@@ -1,1 +1,21 @@
-<p>event works!</p>
+<app-header />
+
+<div class="container">
+    <div class="left">
+        <h1>Event : {{event.name}}</h1>
+        <h4>Category : {{event.category}}</h4>
+        <h4>Date : {{event.date | date : 'dd-MM-yyyy'}}</h4>
+        <h4>Time : {{event.time}} {{event.amPm}}</h4>
+        <h4>Location : {{event.location}}</h4>
+        <h4>Description : {{event.desc}}</h4>
+        <h1>
+            <span (click)="decreaseF()">-</span>
+            <input type="number" disabled="" [(ngModel)]="ticketNumber" name="ticketNumber">
+            <span (click)="increaseF()">+</span>
+        </h1>
+        <button (click)="bookTicket()">Book Tckets</button>
+    </div>
+    <div class="right">
+        <img src={{event.iLnik}} alt="">
+    </div>
+</div>

@@ -29,6 +29,7 @@ export class Event {
   name: string;
   iLnik: string;
   date: Date;
+  hostId: any;
   category: string;
   time: string;
   amPm: string;
@@ -45,5 +46,22 @@ export class Event {
     this.amPm = '';
     this.location = '';
     this.desc = '';
+  }
+}
+
+export class Ticket {
+  id: any;
+  eventName: string;
+  eventId: string;
+  userName: string;
+  userId: string;
+  ticket: number;
+  constructor() {
+    this.id = undefined;
+    this.eventName = '';
+    this.eventId = '';
+    this.userName = '';
+    this.userId = '';
+    this.ticket = 1;
   }
 }

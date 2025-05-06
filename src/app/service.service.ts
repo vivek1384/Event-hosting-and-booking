@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Event } from './app.component';
+import { Event, Ticket } from './app.component';
 
 @Injectable({
   providedIn: 'root',
@@ -15,5 +15,11 @@ export class ServiceService {
   }
   getAllService() {
     return this.http.get<Event[]>(`${this.url}event`);
+  }
+  getSingleEvent(i: any) {
+    return this.http.get<Event>(`${this.url}event/${i}`);
+  }
+  bookTicket(d: Ticket) {
+    return this.http.post(`${this.url}ticket`, d);
   }
 }

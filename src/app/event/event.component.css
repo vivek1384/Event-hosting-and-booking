@@ -1,0 +1,86 @@
+.container{
+    height: calc(100dvh - 50px);
+    overflow: hidden;
+    background: var(--bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left{
+    padding-left: 4rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+.left h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 span{
+    cursor: pointer;
+}
+
+.left h1 input{
+    font-size: 25px;
+    width: 50px;
+    border: none;
+    background: transparent;
+    border: 2px solid var(--main-text);
+    padding: 0 5px;
+}
+
+.left button{
+    background: transparent;
+    font-size: 25px;
+    padding: 4px 12px;
+    background: var(--main-text);
+    cursor: pointer;
+    color: #fff;
+}
+
+.left button:hover{
+    background: #fff;
+    border: 2px solid var(--main-text);
+    color : var(--main-text);
+}
+
+.right{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4rem;
+}
+
+.right img{
+    width: 90%;
+}
+
+@media screen and (width <= 750px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .container .left{
+        width: 90%;
+        padding: 0;
+    }
+
+    .right{
+        width: 90%;
+        padding: 0;
+    }
+    
+}
