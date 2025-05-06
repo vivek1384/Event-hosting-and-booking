@@ -4,24 +4,38 @@
     <form action="">
         <h1>📅 Plan an Event</h1>
         <div class="div">
-            <input type="text" placeholder="Event Name...">
+            <input type="text" placeholder="Event Name..." [(ngModel)]="event.name" name="name">
+            <input type="text" placeholder="Image link..." [(ngModel)]="event.iLnik" name="iLnik">
             <input type="date">
             <div>
-                <input type="text" placeholder="Time">
-                <select name="" id="">
+                <input type="text" placeholder="Time" [(ngModel)]="event.time" name="time">
+                <select id="" [(ngModel)]="event.amPm" name="name">
                     <option value="" selected disabled hidden>AM/PM</option>
                     <option value="AM">AM</option>
                     <option value="PM">PM</option>
                 </select>
             </div>
-            <select>
-                <option value="" disabled hidden selected>Location...</option>
-                @for (item of cityList; track $index) {
-                    <option value="">{{item}}</option>
+            <select id="" [(ngModel)]="event.category" name="category">
+                <option value="" selected disabled hidden>Select Category...</option>
+                @for (item of categoryList; track $index) {
+                <option [value]="item">{{item}}</option>
                 }
             </select>
-            <textarea name="" id="" placeholder="Event Description..." rows="3"></textarea>
-            <button>Submit</button>
+            <select id="" [(ngModel)]="stateName" name="stateName">
+                <option value="" selected disabled hidden>Select State...</option>
+                @for (item of stateList; track $index) {
+                <option [value]="item">{{item}}</option>
+                }
+            </select>
+            <select [(ngModel)]="cityName" name="cityName">
+                <option value="" disabled hidden selected>Location...</option>
+                @for (item of cityList; track $index) {
+                <option [value]="item">{{item}}</option>
+                }
+            </select>
+            <textarea name="desc" id="" placeholder="Event Description..." rows="3" [(ngModel)]="event.desc">
+            </textarea>
+            <button (click)="submit()">Submit</button>
         </div>
     </form>
 </div>
