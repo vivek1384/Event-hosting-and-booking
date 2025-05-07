@@ -1,5 +1,18 @@
 {
-  "user": [],
+  "user": [
+    {
+      "id": "def2",
+      "name": "Vivek Dudhatra",
+      "password": "1234",
+      "email": "vivek@test.com"
+    },
+    {
+      "id": "bcf9",
+      "name": "Akhil Hapani",
+      "password": "9909",
+      "email": "akhil@gmail.com"
+    }
+  ],
   "event": [
     {
       "id": "2f8e",

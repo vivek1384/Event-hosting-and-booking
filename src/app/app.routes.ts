@@ -4,11 +4,12 @@ import { EventPlanComponent } from './event-plan/event-plan.component';
 import { ExploreComponent } from './explore/explore.component';
 import { NewComponent } from './new/new.component';
 import { EventComponent } from './event/event.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -30,5 +31,9 @@ export const routes: Routes = [
   {
     path: 'event',
     component: EventComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
 ];
