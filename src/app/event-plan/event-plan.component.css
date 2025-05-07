@@ -71,6 +71,20 @@ button:hover{
     background: var(--header);
 }
 
+form .div .lable{
+    display: flex;
+    justify-content: center;
+}
+
+form .div .lable input{
+    border-right: none;
+}
+form .div .lable label{
+    width: 35%;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
 @media screen and (width <= 750px) {
     form {
         width: 80%;

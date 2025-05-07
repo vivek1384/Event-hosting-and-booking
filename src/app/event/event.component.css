@@ -53,6 +53,12 @@ h1 span{
     color : var(--main-text);
 }
 
+.left h3{
+    color: #ff5420;
+    margin: 4px 0;
+    font-weight: 500;
+}
+
 .right{
     width: 45%;
     display: flex;

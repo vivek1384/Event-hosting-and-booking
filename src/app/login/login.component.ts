@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { User } from '../app.component';
 import { FormsModule } from '@angular/forms';
 import { ServiceService } from '../service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,6 +13,7 @@ import { ServiceService } from '../service.service';
 export class LoginComponent {
   isLogin = true;
   service = inject(ServiceService);
+  router = inject(Router);
 
   user: User = new User();
 
@@ -28,6 +30,7 @@ export class LoginComponent {
             if (result.length == 1) {
               alert('Sign up success.');
               localStorage.setItem('userid', result[0].id);
+              this.router.navigate(['home']);
             }
           });
       }
@@ -40,6 +43,7 @@ export class LoginComponent {
       .subscribe((result) => {
         if (result.length == 1) {
           alert('Log In success.');
+          this.router.navigate(['home']);
           localStorage.setItem('userid', result[0].id);
         } else {
           alert('Email or password is incorrect.');

@@ -15,44 +15,78 @@
   ],
   "event": [
     {
-      "id": "2f8e",
-      "name": "Arijit Singh Concert",
-      "iLnik": "https://images.bhaskarassets.com/web2images/1884/2025/01/24/1669538406-arijit-singh1672307913_1737718636.jpg",
-      "date": "2025-05-06T05:43:25.587Z",
-      "category": "Music & Concert",
-      "time": "7.00",
-      "amPm": "PM",
-      "location": "Surat, Gujarat",
-      "desc": "At our stadium."
+      "id": "f45a",
+      "name": "Tech Fest",
+      "iLnik": "https://cosmicfragnances.in/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-01-at-1.54.30-PM.jpeg",
+      "date": "2025-05-07T05:16:09.737Z",
+      "hostId": "bcf9",
+      "hostname": "Akhil Hapani",
+      "category": "Tech & Innovation",
+      "time": "9.00",
+      "amPm": "AM",
+      "location": "Ahmedabad, Gujarat",
+      "desc": "It is organize with keeping in mind to share the new tech ideas to the related people. ",
+      "totalTicket": 10,
+      "avalTicket": 0,
+      "bookedTicket": 0
     },
     {
-      "id": "2500",
-      "name": "IPL match",
-      "iLnik": "https://media.istockphoto.com/id/177427917/photo/close-up-of-red-cricket-ball-and-bat-sitting-on-grass.jpg?s=612x612&w=0&k=20&c=DcorerbBUeDNTfld3OclgHxCty4jih2yDCzipffX6zw=  ",
-      "date": "2025-05-06T10:02:37.040Z",
-      "category": "Sport & Fitness",
-      "time": "6.30",
+      "id": "b7b3",
+      "name": "Festival Celebration",
+      "iLnik": "https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=612x612&w=0&k=20&c=yIKLzW7wMydqmuItTTtUGS5cYTmrRGy0rXk81AltdTA=",
+      "date": "2025-05-07T05:18:43.471Z",
+      "hostId": "bcf9",
+      "hostname": "Akhil Hapani",
+      "category": "Festival",
+      "time": "6.00",
       "amPm": "PM",
-      "location": "Mumbai, Maharashtra",
-      "desc": "It is IPL match where MI will face the GT."
+      "location": "Goa, Goa",
+      "totalTicket": 10,
+      "avalTicket": 10,
+      "bookedTicket": 0,
+      "desc": "It will be remarkable celebration of upcoming festive season."
+    },
+    {
+      "id": "dd36",
+      "name": "Business Conference",
+      "iLnik": "https://images.stockcake.com/public/2/9/7/2974e4b2-1c1d-4934-8de9-10bd15c7c8c6_large/professional-business-meeting-stockcake.jpg",
+      "date": "2025-05-07T05:31:58.537Z",
+      "hostId": "def2",
+      "hostname": "Vivek Dudhatra",
+      "category": "Business & Networking",
+      "time": "9.00",
+      "amPm": "AM",
+      "location": "Surat, Gujarat",
+      "desc": "This is busine ss meeting where all people will learn some new business strategies.",
+      "totalTicket": 10,
+      "avalTicket": 0,
+      "bookedTicket": 10
     }
   ],
   "ticket": [
     {
-      "id": "cd38",
-      "eventName": "",
-      "eventId": "",
-      "userName": "",
-      "userId": "",
-      "ticket": 1
+      "id": "aad9",
+      "eventName": "Business Conference",
+      "eventId": "dd36",
+      "userName": "Akhil Hapani",
+      "userId": "bcf9",
+      "ticket": 2
     },
     {
-      "id": "818a",
-      "eventName": "",
-      "eventId": "",
-      "userName": "",
-      "userId": "",
+      "id": "6134",
+      "eventName": "Business Conference",
+      "eventId": "dd36",
+      "userName": "Akhil Hapani",
+      "userId": "bcf9",
       "ticket": 3
+    },
+    {
+      "id": "bf71",
+      "eventName": "Business Conference",
+      "eventId": "dd36",
+      "userName": "Akhil Hapani",
+      "userId": "bcf9",
+      "ticket": 5
     }
   ]
 }

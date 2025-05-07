@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FormsModule } from '@angular/forms';
-import { Event } from '../app.component';
+import { Event, User } from '../app.component';
 import { ServiceService } from '../service.service';
 
 @Component({
@@ -10,10 +10,23 @@ import { ServiceService } from '../service.service';
   templateUrl: './event-plan.component.html',
   styleUrl: './event-plan.component.css',
 })
-export class EventPlanComponent {
+export class EventPlanComponent implements OnInit {
   constructor(private service: ServiceService) {}
 
+  ngOnInit(): void {
+    this.getUserbyId();
+  }
+
   event: Event = new Event();
+  user: User = new User();
+
+  getUserbyId() {
+    this.service.getUser(localStorage.getItem('userid')).subscribe((res) => {
+      if (res) {
+        this.user = res;
+      }
+    });
+  }
 
   stateList = ['Gujarat', 'Maharashtra', 'Goa'];
   cityList = [
@@ -40,6 +53,9 @@ export class EventPlanComponent {
 
   submit() {
     this.event.location = this.cityName + ', ' + this.stateName;
+    this.event.hostId = localStorage.getItem('userid');
+    this.event.hostname = this.user.name;
+    this.event.avalTicket = this.event.totalTicket;
     console.log(this.event);
     this.service.addEvent(this.event).subscribe((res) => {
       if (res) {

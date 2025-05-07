@@ -24,6 +24,7 @@ export class ExploreComponent implements OnInit {
         this.allEvent = Res;
         console.log(Res);
         for (let i = 0; i < this.allEvent.length; i++) {
+          debugger;
           if (this.allEvent[i].category == this.category1name) {
             this.category1.push(this.allEvent[i]);
           } else if (this.allEvent[i].category == this.category2name) {
@@ -52,7 +53,7 @@ export class ExploreComponent implements OnInit {
   allEvent: Event[] = [];
 
   category1name = 'Music & Concert';
-  category2name = 'Buisness & Networking';
+  category2name = 'Business & Networking';
   category3name = 'Tech & Innovation';
   category4name = 'Festival';
   category5name = 'Mental Health';

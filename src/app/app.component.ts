@@ -30,22 +30,30 @@ export class Event {
   iLnik: string;
   date: Date;
   hostId: any;
+  hostname: string;
   category: string;
   time: string;
   amPm: string;
   location: string;
   desc: string;
+  totalTicket: number;
+  avalTicket: number;
+  bookedTicket: number;
 
   constructor() {
     this.id = undefined;
     this.name = '';
     this.iLnik = '';
     this.date = new Date();
+    this.hostname = '';
     this.category = '';
     this.time = '';
     this.amPm = '';
     this.location = '';
     this.desc = '';
+    this.totalTicket = 0;
+    this.avalTicket = 0;
+    this.bookedTicket = 0;
   }
 }
 
@@ -54,7 +62,7 @@ export class Ticket {
   eventName: string;
   eventId: string;
   userName: string;
-  userId: string;
+  userId: any;
   ticket: number;
   constructor() {
     this.id = undefined;

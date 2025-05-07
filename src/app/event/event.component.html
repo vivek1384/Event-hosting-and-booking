@@ -8,12 +8,22 @@
         <h4>Time : {{event.time}} {{event.amPm}}</h4>
         <h4>Location : {{event.location}}</h4>
         <h4>Description : {{event.desc}}</h4>
-        <h1>
-            <span (click)="decreaseF()">-</span>
-            <input type="number" disabled="" [(ngModel)]="ticketNumber" name="ticketNumber">
-            <span (click)="increaseF()">+</span>
-        </h1>
-        <button (click)="bookTicket()">Book Tckets</button>
+        @if(event.avalTicket < 10 && event.avalTicket != 0){ <h3>Hurry up only <strong>{{event.avalTicket}} tickets</strong> are available.</h3>
+            }
+            @else if(event.avalTicket == 0){
+            <h3>No tickets available.</h3>
+            }
+            @else {
+                <h4>Available Tickets : {{event.avalTicket}}</h4>
+            }
+            @if(event.avalTicket != 0){
+            <h1>
+                <span (click)="decreaseF()">-</span>
+                <input type="number" disabled="" [(ngModel)]="ticketNumber" name="ticketNumber">
+                <span (click)="increaseF()">+</span>
+            </h1>
+            <button (click)="bookTicket()">Book Tckets</button>
+            }
     </div>
     <div class="right">
         <img src={{event.iLnik}} alt="">

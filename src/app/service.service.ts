@@ -28,4 +28,10 @@ export class ServiceService {
   login(e: string, p: string) {
     return this.http.get<User[]>(`${this.url}user?email=${e}&password=${p}`);
   }
+  getUser(id: any) {
+    return this.http.get<User>(`${this.url}user/${id}`);
+  }
+  editEvent(id: any, d: Event) {
+    return this.http.put(`${this.url}event/${id}`, d);
+  }
 }

@@ -15,6 +15,10 @@
                     <option value="PM">PM</option>
                 </select>
             </div>
+            <div class="lable">
+                <label for="">Total Ticket :</label>
+                <input type="number" [(ngModel)]="event.totalTicket" name="totalTicket">
+            </div>
             <select id="" [(ngModel)]="event.category" name="category">
                 <option value="" selected disabled hidden>Select Category...</option>
                 @for (item of categoryList; track $index) {
