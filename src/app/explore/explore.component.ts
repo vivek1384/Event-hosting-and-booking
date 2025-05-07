@@ -24,7 +24,6 @@ export class ExploreComponent implements OnInit {
         this.allEvent = Res;
         console.log(Res);
         for (let i = 0; i < this.allEvent.length; i++) {
-          debugger;
           if (this.allEvent[i].category == this.category1name) {
             this.category1.push(this.allEvent[i]);
           } else if (this.allEvent[i].category == this.category2name) {

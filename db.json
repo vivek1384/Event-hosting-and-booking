@@ -42,8 +42,8 @@
       "amPm": "PM",
       "location": "Goa, Goa",
       "totalTicket": 10,
-      "avalTicket": 10,
-      "bookedTicket": 0,
+      "avalTicket": 8,
+      "bookedTicket": 2,
       "desc": "It will be remarkable celebration of upcoming festive season."
     },
     {
@@ -61,6 +61,22 @@
       "totalTicket": 10,
       "avalTicket": 2,
       "bookedTicket": 8
+    },
+    {
+      "id": "8cf9",
+      "name": "Sports day celebration",
+      "iLnik": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4ddEMJgYKXTVyuBtBKfRUx91DYYj5yucNHA&s",
+      "date": "2025-05-07T09:16:58.937Z",
+      "hostId": "def2",
+      "hostname": "Vivek Dudhatra",
+      "category": "Sport & Fitness",
+      "time": "9.00",
+      "amPm": "AM",
+      "location": "Surat, Gujarat",
+      "desc": "It is sports day celebration. Book your tickets now.",
+      "totalTicket": 15,
+      "avalTicket": 15,
+      "bookedTicket": 0
     }
   ],
   "ticket": [
@@ -87,6 +103,14 @@
       "userName": "Akhil Hapani",
       "userId": "bcf9",
       "ticket": 3
+    },
+    {
+      "id": "d209",
+      "eventName": "Festival Celebration",
+      "eventId": "b7b3",
+      "userName": "Vivek Dudhatra",
+      "userId": "def2",
+      "ticket": 2
     }
   ]
 }

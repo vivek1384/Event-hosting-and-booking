@@ -56,7 +56,6 @@ export class EventComponent implements OnInit {
   }
 
   bookTicket() {
-    debugger;
     if (this.event.hostId == localStorage.getItem('userid')) {
       alert("You can't book an event host by yourself.");
     } else {

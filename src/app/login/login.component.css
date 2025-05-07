@@ -46,3 +46,9 @@ form button{
     margin-top: 1rem;
     cursor: pointer;
 }
+
+@media screen and (width <= 750px) {
+    .container .box{
+        width: 80%;
+    }
+}

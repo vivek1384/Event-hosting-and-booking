@@ -1,6 +1,10 @@
-.container {
+.main {
     height: calc(100dvh - 50px);
     background: var(--bg);
+}
+
+.container {
+    height: calc(100dvh - 110px);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -10,7 +14,8 @@
     gap: 2rem;
 }
 
-.left, .right {
+.left,
+.right {
     width: 50%;
     background: #fff;
     height: 84%;
@@ -18,7 +23,9 @@
     padding: 2rem;
 }
 
-.left .boxes, .right .boxes, .popup .boxes{
+.left .boxes,
+.right .boxes,
+.popup .boxes {
     height: 90%;
     overflow-y: scroll;
     margin-top: 1rem;
@@ -27,7 +34,7 @@
     gap: 1rem;
 }
 
-.boxes .box{
+.boxes .box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,12 +48,12 @@
     width: 30%;
 }
 
-.box .img img{
+.box .img img {
     width: 100%;
     height: auto;
 }
 
-button{
+button {
     font-size: 19px;
     background: var(--main-text);
     border: 2px solid var(--main-text);
@@ -57,13 +64,13 @@ button{
     color: #fff;
 }
 
-button:hover{
+button:hover {
     background: #fff;
     border-color: var(--main-text);
     color: var(--main-text);
 }
 
-.popup{
+.popup {
     height: 100dvh;
     width: 100%;
     position: absolute;
@@ -72,45 +79,46 @@ button:hover{
     backdrop-filter: blur(25px);
 }
 
-.popup .boxes{
+.popup .boxes {
     width: 50%;
     margin: auto;
     margin-top: 8rem;
 }
 
-.popup .boxes button{
+.popup .boxes button {
     margin: auto;
     margin-top: 1rem;
 }
 
 
-@media screen and (width <= 750px) {
-    .container{
+@media screen and (width <=750px) {
+    .container {
         flex-direction: column;
         height: fit-content;
         overflow-y: scroll;
     }
 
-    .container h1 span{
+    .container h1 span {
         display: none;
     }
 
-    .container .left , .container .right{
+    .container .left,
+    .container .right {
         width: 95%;
         height: fit-content;
     }
 
-    .container .left .box{
+    .container .left .box {
         flex-direction: column-reverse;
         gap: 10px;
     }
 
-    .container .left .box .img{
+    .container .left .box .img {
         /* display: none; */
         width: 50%;
     }
-    
-    .popup .boxes{
+
+    .popup .boxes {
         width: 80%;
     }
 }

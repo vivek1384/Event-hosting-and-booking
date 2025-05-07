@@ -88,8 +88,11 @@ form .div .lable label{
 @media screen and (width <= 750px) {
     form {
         width: 80%;
-        margin-top: 12rem;
+        margin-top: 8rem;
     }   
+    form .div .lable label{
+        width: 70%;
+    }
     button{
         width: 50%;
     }
