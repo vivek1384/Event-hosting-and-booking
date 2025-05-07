@@ -34,4 +34,14 @@ export class ServiceService {
   editEvent(id: any, d: Event) {
     return this.http.put(`${this.url}event/${id}`, d);
   }
+
+  getEvent(id: any) {
+    return this.http.get<Event[]>(`${this.url}event?hostId=${id}`);
+  }
+  bookedTicket(id: any) {
+    return this.http.get<Ticket[]>(`${this.url}ticket?userId=${id}`);
+  }
+  getTicketbyEventid(id: any) {
+    return this.http.get<Ticket[]>(`${this.url}ticket?eventId=${id}`);
+  }
 }

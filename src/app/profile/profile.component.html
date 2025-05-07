@@ -1,1 +1,76 @@
-<p>profile works!</p>
+<app-header />
+
+<div class="container">
+    <div class="left">
+        <h1>Event hosted bu you <span>:</span></h1>
+        <div class="boxes">
+            @if(eventList.length > 0){
+            @for (item of eventList; track $index) {
+            <div class="box">
+                <div class="left1">
+                    <h2>Event Name : {{item.name}}</h2>
+                    <h3>Total Ticket : {{item.totalTicket}}</h3>
+                    <h3>Available Ticket : {{item.avalTicket}}</h3>
+                    <h3>Booked Ticket : {{item.bookedTicket}}</h3>
+                    <h3>Event Category : {{item.category}}</h3>
+                    <button (click)="getTicketbyEventid(item.id)">View all ticket</button>
+                </div>
+                <div class="img">
+                    <img src={{item.iLnik}} alt="">
+                </div>
+            </div>
+            }
+        }@else{
+            <div class="box">
+                <h3>No event planned by you. <span style="cursor: pointer; color: #000;" routerLink="/event-plan">Create one here!</span></h3>
+            </div>
+        }
+        </div>
+    </div>
+    <div class="right">
+        <h1>Ticket booked by you <span>:</span></h1>
+        <div class="boxes">
+            @if(ticketList.length > 0){
+            @for (item of ticketList; track $index) {
+            <div class="box">
+                <div class="left1">
+                    <h2>Event Name : {{item.eventName}}</h2>
+                    <h3>Total Ticket : {{item.ticket}}</h3>
+                </div>
+                <!-- <div class="img">
+                    <img src={{item.iLnik}} alt="">
+                </div> -->
+            </div>
+            }}
+            @else {
+                <div class="box">
+                    <h3>No ticket booked by you. <span style="cursor: pointer; color: black;" routerLink="/explore">Explore your vibe now.</span></h3>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+@if(popup){
+<div class="popup">
+    <div class="boxes">
+        @if(ticketListbyEvent.length > 0){
+        @for (item of ticketListbyEvent; track $index) {
+        <div class="box">
+            <div class="left1">
+                <h2>Event Name : {{item.eventName}}</h2>
+                <h3>Ticket : {{item.ticket}}</h3>
+                <h3>Booked by : {{item.userName}}</h3>
+            </div>
+        </div>
+        }
+        }@else {
+        <div class="box">
+            <h2>No ticket booked within this event.</h2>
+        </div>
+        }
+        <button (click)="close()">Close</button>
+    </div>
+</div>
+}

@@ -5,6 +5,7 @@ import { ExploreComponent } from './explore/explore.component';
 import { NewComponent } from './new/new.component';
 import { EventComponent } from './event/event.component';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +36,9 @@ export const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'profile',
+    component: ProfileComponent,
   },
 ];

@@ -59,8 +59,8 @@
       "location": "Surat, Gujarat",
       "desc": "This is busine ss meeting where all people will learn some new business strategies.",
       "totalTicket": 10,
-      "avalTicket": 0,
-      "bookedTicket": 10
+      "avalTicket": 2,
+      "bookedTicket": 8
     }
   ],
   "ticket": [
@@ -81,12 +81,12 @@
       "ticket": 3
     },
     {
-      "id": "bf71",
+      "id": "b60d",
       "eventName": "Business Conference",
       "eventId": "dd36",
       "userName": "Akhil Hapani",
       "userId": "bcf9",
-      "ticket": 5
+      "ticket": 3
     }
   ]
 }
